@@ -1,0 +1,107 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+  background-color: rgb(247, 185, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 640px;
+  max-width: 1000px;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+}
+
+h3 {
+  font-size: 40px;
+  color: rgb(66, 6, 61);
+}
+
+.todo-name {
+  font-size: 20px;
+  padding: 3px;
+  border: 1px solid rgb(178, 32, 178);
+  border-radius: 3px;
+}
+
+.todo-due-date {
+  font-size: 20px;
+  padding: 2px;
+  border: 1px solid rgb(178, 32, 178);
+  border-radius: 3px;
+}
+
+.add-todo {
+  font-size: 20px;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(73, 16, 56);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-todo {
+  font-size: 20px;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(223, 60, 10);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.todo {
+  font-size: 20px;
+  color: rgb(204, 84, 158);
+}
+
+.main,
+.todos {
+  display: grid;
+  grid-template-columns: 300px 150px 100px;
+  margin-bottom: 30px;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.author-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 530px) {
+  .container {
+      margin: 0 20px;
+      max-width: 96%;
+      min-width: 96%;
+  }
+}
